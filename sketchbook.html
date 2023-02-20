@@ -11,13 +11,13 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/instagram.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/sketchbook.css" type="text/css" media="screen">
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen">
 
     <!-- Font awesome kit -->
     <script src="https://kit.fontawesome.com/23196d1ae5.js" crossorigin="anonymous"></script>
 
-    <title>Pinksi - Instagram</title>
+    <title>Pinksi - Sketchbook</title>
     <link rel="icon"
         href="https://user-images.githubusercontent.com/78669960/218239678-80e633fc-c83d-4323-a40c-26c33bde0fba.png">
 
@@ -25,11 +25,11 @@
     <meta name="description" content="Cara Lymath, a student illustrator at the University of Gloucestershire">
 
     <meta property="og:type" content="portfolio">
-    <meta property="og:title" content="Pinksi - Instagram">
+    <meta property="og:title" content="Pinksi - Sketchbook">
     <meta property="og:description" content="Cara Lymath, a student illustrator at the University of Gloucestershire">
 
     <meta property="og:site_name" content="Pinksi Illustration">
-    <meta name="twitter:title" content="Pinksi - Instagram">
+    <meta name="twitter:title" content="Pinksi - Sketchbook">
     <meta name="twitter:description" content="Cara Lymath, a student illustrator at the University of Gloucestershire">
 
     <meta name="author" content="Cara Lymath">
@@ -59,24 +59,43 @@
                 class="fa-brands fa-instagram"></i></a>
     </div>
 
-    <div class="main-container" id="instafeed"></div>
+    <!-- Main -->
 
+    <div class="main-container">
+        <div class="main-row-container">
+            <div class="main-content">
+                <a href="##" class="content-link">
+                    <img src="https://user-images.githubusercontent.com/78669960/218243222-ce6b6bbe-89d8-4ee9-93cf-eb0c41b327f7.png"
+                        width="400" height=400" alt="" class="middle-top-image content-picture">
+                    <div class="overlay-background"></div>
+                    <div class="overlay-text-container">
+                        <span class="offset-header offset-header-odd"><span>Digital</span></span>
+                        <span class="offset-header offset-header-even"><span>All my digital art!</span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="main-row-container">
+            <div class="main-content">
+                <a href="" class="content-link"></a>
+            </div>
+        </div>
+
+        <div class="main-row-container">
+            <div class="main-content">
+                <a href="" class="content-link"></a>
+            </div>
+        </div>
+
+        <div class="main-row-container">
+            <div class="main-content">
+                <a href="" class="content-link"></a>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="./node_modules/instafeed.js/dist/instafeed.js"></script>
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            accessToken: '',
-            template: '<div class="main-row-container">' +
-                '<a href="{{link}}" class="content-link">' +
-                '<div class="main-content left-box-content">' +
-                '<img src="{{image}}" alt="Instagram picture" class="left-box-image content-picture">' +
-                '</div>' +
-                '</a>' +
-                '</div>',
-            sortBy: 'most-recent'
-        });
-        feed.run();
-    </script>
 </body>
 
 </html>

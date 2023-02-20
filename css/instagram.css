@@ -28,6 +28,7 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  overflow: hidden;
   transition: 300ms ease-in-out;
   cursor: pointer;
   /*
@@ -66,6 +67,7 @@
   right: 0;
   margin: auto;
   border-radius: 10px;
+  transition: 300ms ease-in-out;
 }
 @keyframes slideUp {
   0%, 50% {
@@ -124,6 +126,9 @@
 }
 .main-container .main-row-container .main-content:hover .overlay-text-container .offset-header > span {
   animation-name: slideUp;
+}
+.main-container .main-row-container .main-content:hover .content-picture {
+  transform: scale(1.03);
 }
 .main-container .main-row-middle {
   display: flex;

@@ -42,6 +42,8 @@ $dark-mode: rgba(25, 25, 28, 1);
             -webkit-border-radius: 10px;
             border-radius: 10px;
 
+            overflow: hidden;
+
             transition: 300ms ease-in-out;
             cursor: pointer;
 
@@ -66,6 +68,8 @@ $dark-mode: rgba(25, 25, 28, 1);
                 right: 0;
                 margin: auto;
                 border-radius: 10px;
+
+                transition: 300ms ease-in-out;
             }
 
 
@@ -162,6 +166,10 @@ $dark-mode: rgba(25, 25, 28, 1);
 
             &:hover .overlay-text-container .offset-header>span {
                 animation-name: slideUp;
+            }
+
+            &:hover .content-picture {
+                transform: scale(1.03);
             }
 
 
