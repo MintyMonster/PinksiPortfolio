@@ -70,7 +70,8 @@
     </div>
 
     <div class="navbar-socials-container">
-        <a href="https://www.instagram.com/pinksi.i/" target="_blank" class="navbar-social"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/pinksi.i/" target="_blank" class="navbar-social"><i
+                class="fa-brands fa-instagram"></i></a>
     </div>
 
     <div class="main-container">
@@ -87,7 +88,7 @@
                 </div>
             </a>
         </div>
-        
+
         <div class="main-row-container main-row-middle">
             <a href="#test1" class="content-link">
                 <div class="main-content-middle">
@@ -104,7 +105,7 @@
             <a href="#test2" class="content-link">
                 <div class="main-content-middle">
                     <img src="https://user-images.githubusercontent.com/78669960/218243574-8b7a21b3-b536-4c32-8cc5-c4421ea82527.png"
-                    width="413" height="327" alt="" class="middle-bottom-image content-picture">
+                        width="413" height="327" alt="" class="middle-bottom-image content-picture">
                     <div class="overlay-background"></div>
                     <div class="overlay-text-container">
                         <span class="offset-header offset-header-odd"><span>Art 2</span></span>
@@ -129,6 +130,36 @@
             </a>
         </div>
     </div>
+
+    <a href="#nav" class="navbar-out-button-a" onclick="moveNavOut()">
+        <div class="navbar-out-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </a>
+
+    <div class="navbar-responsive" id="navbar-responsive">
+        <a href="#close" class="x-button-responsive" onclick="moveNavIn()"><i class="fa-solid fa-x"></i></a>
+        <div class="link-container-responsive">
+            <a href="./index.html" class="home-responsive nav-responsive-text">Home</a>
+            <a href="./sketchbook.html" class="sketchbook-responsive nav-responsive-text">Sketchbook</a>
+            <a href="./aboutme.html" class="aboutme-responsive nav-responsive-text">About me</a>
+            <a href="./contact.html" class="contact-responsive nav-responsive-text">Contact me</a>
+        </div>
+    </div>
+
+    <script>
+
+        function moveNavIn() {
+            document.getElementById("navbar-responsive").style.transform = 'translate(-100vw)';
+        }
+
+        function moveNavOut(){
+            document.getElementById("navbar-responsive").style.transform = 'translate(0vw)';
+        }
+
+    </script>
 
 </body>
 

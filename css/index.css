@@ -7,6 +7,11 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1250px) {
+  .main-container {
+    display: none;
+  }
+}
 .main-container .main-row-container {
   flex: 0.9 0.9 0px;
 }
