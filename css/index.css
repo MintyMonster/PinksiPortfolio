@@ -9,7 +9,9 @@
 }
 @media (max-width: 1250px) {
   .main-container {
-    display: none;
+    width: calc(100vw - 30px);
+    height: auto;
+    flex-wrap: wrap;
   }
 }
 .main-container .main-row-container {
@@ -20,6 +22,8 @@
   height: calc(100% - 20px);
   margin: 10px;
   position: relative;
+  max-width: 415px;
+  max-height: 680px;
   border: 1px solid black;
   -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9);
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9);
@@ -29,6 +33,13 @@
   border-radius: 10px;
   transition: 150ms ease-in-out;
   cursor: pointer;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content {
+    width: calc(100vw - 50px);
+    height: auto;
+    background-color: black;
+  }
 }
 .main-container .main-row-container .main-content .content-picture {
   width: 100%;
@@ -78,6 +89,12 @@
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
+.main-container .main-row-container .main-content .overlay-text-container .responsive-text-header {
+  font-size: 25px;
+}
+.main-container .main-row-container .main-content .overlay-text-container .responsive-text-subheader {
+  font-size: 15px;
+}
 .main-container .main-row-container .main-content .overlay-text-container .offset-header {
   display: block;
   overflow: hidden;
@@ -87,6 +104,11 @@
   animation-timing-function: ease-in;
   display: block;
   opacity: 0;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content .overlay-text-container .offset-header > span {
+    opacity: 1;
+  }
 }
 .main-container .main-row-container .main-content .overlay-text-container .offset-header-odd > span {
   text-align: left;
@@ -120,6 +142,12 @@
   z-index: 1;
   transition: 400ms ease-in-out;
 }
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content .overlay-background {
+    opacity: 1;
+    height: 100%;
+  }
+}
 .main-container .main-row-container .main-content:hover {
   transform: translateY(-5px) translateX(-5px);
 }
@@ -137,11 +165,20 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1250px) {
+  .main-container .main-row-middle {
+    width: calc(100vw - 30px);
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
 .main-container .main-row-middle .main-content-middle {
   margin: auto;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   margin: 13px;
+  max-width: 415px;
+  max-height: 328px;
   border: 1px solid black;
   -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9);
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9);
@@ -152,6 +189,13 @@
   position: relative;
   transition: 150ms ease-in-out;
   cursor: pointer;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-middle .main-content-middle {
+    width: calc(100vw - 50px);
+    height: auto;
+    background-color: black;
+  }
 }
 .main-container .main-row-middle .main-content-middle .content-picture {
   width: 100%;
@@ -211,6 +255,10 @@
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
+.main-container .main-row-middle .main-content-middle .overlay-text-container .responsive-text-header, .main-container .main-row-middle .main-content-middle .overlay-text-container .responsive-text-subheader {
+  display: block;
+  overflow: hidden;
+}
 .main-container .main-row-middle .main-content-middle .overlay-text-container .offset-header {
   display: block;
   overflow: hidden;
@@ -220,6 +268,11 @@
   animation-timing-function: ease-in;
   display: block;
   opacity: 0;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-middle .main-content-middle .overlay-text-container .offset-header > span {
+    opacity: 1;
+  }
 }
 .main-container .main-row-middle .main-content-middle .overlay-text-container .offset-header-odd > span {
   text-align: left;
@@ -252,6 +305,12 @@
   border-radius: 10px 10px 10px 10px;
   z-index: 1;
   transition: 400ms ease-in-out;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-middle .main-content-middle .overlay-background {
+    opacity: 1;
+    height: 100%;
+  }
 }
 .main-container .main-row-middle .main-content-middle:hover {
   transform: translateY(-5px) translateX(-5px);

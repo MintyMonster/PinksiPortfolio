@@ -121,64 +121,81 @@ html {
     }
 }
 
-.navbar-out-button {
+// Responsive
 
-    position: absolute;
-    margin-left: 10px;
-    top: 0;
-    margin-top: 10px;
+.responsive {
 
-    div {
-        @media (max-width: $breakpoint-media-width) {
-            width: 35px;
-            height: 4px;
-            background-color: black;
-            margin: 4px 0;
-        }
+    display: none;
+
+    @media (max-width: $breakpoint-media-width){
+        display: contents;
     }
-}
 
-.navbar-responsive {
-    @media (max-width: $breakpoint-media-width) {
-        width: 100vw;
-        height: 100vh;
+    .navbar-out-button {
+
         position: absolute;
+        margin-left: 10px;
         top: 0;
-        left: 0;
-        background-color: white;
-        overflow: hidden;
-        
-        transform: translate(-100vw);
-        transition: 300ms ease-in-out;
-    }
-
-    .x-button-responsive {
-        @media(max-width: $breakpoint-media-width){
-            top: 0;
-            right: 0;
-            position: absolute;
-            margin-right: 10px;
-            margin-top: 10px;
-            font-size: 25px;
-            color: black;
-            font-weight: bold;
+        margin-top: 10px;
+    
+        div {
+            @media (max-width: $breakpoint-media-width) {
+                width: 35px;
+                height: 4px;
+                background-color: black;
+                margin: 4px 0;
+            }
         }
     }
-
-    .link-container-responsive {
-        width: 100vw;
-        height: 300px;
-        margin-top: 35vh;
-        position: absolute;
-        text-align: center;
-
-        .nav-responsive-text {
-            text-decoration: none;
-            color: black;
-            font-family: $font-primary;
-            font-size: 35px;
-            display: list-item;
-            margin: 10px;
+    
+    .navbar-responsive {
+        @media (max-width: $breakpoint-media-width) {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow: hidden;
+    
+            transform: translate(-100vw);
+            transition: 300ms ease-in-out;
+            z-index: 3;
+        }
+    
+        .x-button-responsive {
+            @media(max-width: $breakpoint-media-width) {
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin-right: 10px;
+                margin-top: 10px;
+                font-size: 25px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    
+        .link-container-responsive {
+            width: 100vw;
+            height: 300px;
+            margin-top: 35vh;
+            position: absolute;
+            text-align: center;
+    
+            .nav-responsive-text {
+                text-decoration: none;
+                color: black;
+                font-family: $font-primary;
+                font-size: 35px;
+                display: list-item;
+                margin: 10px;
+            }
+    
+            .navbar-social-responsive {
+                font-size: 40px;
+                color: black;
+            }
         }
     }
 }

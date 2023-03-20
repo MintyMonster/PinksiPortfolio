@@ -74,7 +74,7 @@
                 class="fa-brands fa-instagram"></i></a>
     </div>
 
-    <div class="main-container">
+    <div class="main-container" id="main-container">
         <div class="main-row-container">
             <a href="./instagram.html" class="content-link">
                 <div class="main-content left-box-content">
@@ -125,41 +125,37 @@
                         <span class="offset-header offset-header-odd"><span>Art 3</span></span>
                         <span class="offset-header offset-header-even"><span>Check out my art!</span></span>
                     </div>
-
                 </div>
             </a>
         </div>
     </div>
 
-    <a href="#nav" class="navbar-out-button-a" onclick="moveNavOut()">
-        <div class="navbar-out-button">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </a>
+    <!-- Responsive design -->
 
-    <div class="navbar-responsive" id="navbar-responsive">
-        <a href="#close" class="x-button-responsive" onclick="moveNavIn()"><i class="fa-solid fa-x"></i></a>
-        <div class="link-container-responsive">
-            <a href="./index.html" class="home-responsive nav-responsive-text">Home</a>
-            <a href="./sketchbook.html" class="sketchbook-responsive nav-responsive-text">Sketchbook</a>
-            <a href="./aboutme.html" class="aboutme-responsive nav-responsive-text">About me</a>
-            <a href="./contact.html" class="contact-responsive nav-responsive-text">Contact me</a>
+    <div class="responsive">
+        <a href="#nav" class="navbar-out-button-a" onclick="moveNavOut()">
+            <div class="navbar-out-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </a>
+
+        <div class="navbar-responsive" id="navbar-responsive">
+            <a href="#close" class="x-button-responsive" onclick="moveNavIn()"><i class="fa-solid fa-x"></i></a>
+            <div class="link-container-responsive">
+                <a href="./index.html" class="home-responsive nav-responsive-text">Home</a>
+                <a href="./sketchbook.html" class="sketchbook-responsive nav-responsive-text">Sketchbook</a>
+                <a href="./aboutme.html" class="aboutme-responsive nav-responsive-text">About me</a>
+                <a href="./contact.html" class="contact-responsive nav-responsive-text">Contact me</a>
+                <a href="https://www.instagram.com/pinksi.i/" target="_blank" class="navbar-social-responsive"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </div>
 
-    <script>
-
-        function moveNavIn() {
-            document.getElementById("navbar-responsive").style.transform = 'translate(-100vw)';
-        }
-
-        function moveNavOut(){
-            document.getElementById("navbar-responsive").style.transform = 'translate(0vw)';
-        }
-
-    </script>
+    <!-- Scripts -->
+    <script src="js/navbarScript.js"></script>
 
 </body>
 

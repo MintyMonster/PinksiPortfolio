@@ -94,23 +94,30 @@ html {
   color: rgb(255, 105, 180);
 }
 
-.navbar-out-button {
+.responsive {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .responsive {
+    display: contents;
+  }
+}
+.responsive .navbar-out-button {
   position: absolute;
   margin-left: 10px;
   top: 0;
   margin-top: 10px;
 }
 @media (max-width: 1250px) {
-  .navbar-out-button div {
+  .responsive .navbar-out-button div {
     width: 35px;
     height: 4px;
     background-color: black;
     margin: 4px 0;
   }
 }
-
 @media (max-width: 1250px) {
-  .navbar-responsive {
+  .responsive .navbar-responsive {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -120,10 +127,11 @@ html {
     overflow: hidden;
     transform: translate(-100vw);
     transition: 300ms ease-in-out;
+    z-index: 3;
   }
 }
 @media (max-width: 1250px) {
-  .navbar-responsive .x-button-responsive {
+  .responsive .navbar-responsive .x-button-responsive {
     top: 0;
     right: 0;
     position: absolute;
@@ -134,20 +142,24 @@ html {
     font-weight: bold;
   }
 }
-.navbar-responsive .link-container-responsive {
+.responsive .navbar-responsive .link-container-responsive {
   width: 100vw;
   height: 300px;
   margin-top: 35vh;
   position: absolute;
   text-align: center;
 }
-.navbar-responsive .link-container-responsive .nav-responsive-text {
+.responsive .navbar-responsive .link-container-responsive .nav-responsive-text {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   display: list-item;
   margin: 10px;
+}
+.responsive .navbar-responsive .link-container-responsive .navbar-social-responsive {
+  font-size: 40px;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,10 +12,6 @@ $dark-mode: rgba(25, 25, 28, 1);
 
 .main-container {
 
-    @media (max-width: $breakpoint-mobile-width){
-        display: none;
-    }
-
     position: relative;
     width: 1300px;
     height: 700px;
@@ -25,6 +21,12 @@ $dark-mode: rgba(25, 25, 28, 1);
     display: flex;
     flex-direction: row;
 
+    @media (max-width: $breakpoint-mobile-width){
+        width: calc(100vw - 30px);
+        height: auto;
+        flex-wrap: wrap;
+    }
+
     .main-row-container {
         flex: 0.9 0.9 0px;
 
@@ -33,6 +35,9 @@ $dark-mode: rgba(25, 25, 28, 1);
             height: calc(100% - 20px);
             margin: 10px;
             position: relative;
+
+            max-width: 415px;
+            max-height: 680px;
 
             border: 1px solid black;
             -moz-box-shadow: 10px 10px 5px $shadow-color;
@@ -44,6 +49,12 @@ $dark-mode: rgba(25, 25, 28, 1);
 
             transition: 150ms ease-in-out;
             cursor: pointer;
+
+            @media (max-width: $breakpoint-mobile-width){
+                width: calc(100vw - 50px);
+                height: auto;
+                background-color: black;
+            }
 
             .content-picture {
                 width: 100%;
@@ -113,6 +124,14 @@ $dark-mode: rgba(25, 25, 28, 1);
                 color: $white;
                 text-decoration: none;
 
+                .responsive-text-header {
+                    font-size: 25px;
+                }
+
+                .responsive-text-subheader {
+                    font-size: 15px;
+                }
+
                 .offset-header {
                     display: block;
                     overflow: hidden;
@@ -123,6 +142,10 @@ $dark-mode: rgba(25, 25, 28, 1);
                     animation-timing-function: ease-in;
                     display: block;
                     opacity: 0;
+
+                    @media (max-width: $breakpoint-mobile-width){
+                        opacity: 1;
+                    }
                 }
 
                 .offset-header-odd>span {
@@ -166,6 +189,11 @@ $dark-mode: rgba(25, 25, 28, 1);
                 z-index: 1;
                 transition: 400ms ease-in-out;
 
+                @media (max-width: $breakpoint-mobile-width) {
+                    opacity: 1;
+                    height: 100%;
+                }
+
             }
 
             &:hover {
@@ -195,11 +223,20 @@ $dark-mode: rgba(25, 25, 28, 1);
         display: flex;
         flex-direction: column;
 
+        @media (max-width: $breakpoint-mobile-width){
+            width: calc(100vw - 30px);
+            height: auto;
+            flex-wrap: wrap;
+        }
+
         .main-content-middle {
             margin: auto;
             width: calc(100% - 20px);
             height: calc(100% - 20px);
             margin: 13px;
+
+            max-width: 415px;
+            max-height: 328px;
 
             border: 1px solid black;
             -moz-box-shadow: 10px 10px 5px $shadow-color;
@@ -213,6 +250,12 @@ $dark-mode: rgba(25, 25, 28, 1);
             transition: 150ms ease-in-out;
 
             cursor: pointer;
+
+            @media (max-width: $breakpoint-mobile-width){
+                width: calc(100vw - 50px);
+                height: auto;
+                background-color: black;
+            }
 
             .content-picture {
                 width: 100%;
@@ -297,6 +340,16 @@ $dark-mode: rgba(25, 25, 28, 1);
                 color: $white;
                 text-decoration: none;
 
+                @media (max-width: $breakpoint-mobile-width){
+                    
+                }
+
+                // Responsive text
+                
+                .responsive-text-header, .responsive-text-subheader {
+                    display: block;
+                    overflow: hidden;
+                }
 
                 .offset-header {
                     display: block;
@@ -308,6 +361,10 @@ $dark-mode: rgba(25, 25, 28, 1);
                     animation-timing-function: ease-in;
                     display: block;
                     opacity: 0;
+
+                    @media (max-width: $breakpoint-mobile-width){
+                        opacity: 1;
+                    }
                 }
 
                 .offset-header-odd>span {
@@ -351,6 +408,11 @@ $dark-mode: rgba(25, 25, 28, 1);
                 z-index: 1;
                 transition: 400ms ease-in-out;
 
+                @media (max-width: $breakpoint-mobile-width){
+                    opacity: 1;
+                    height: 100%;
+                }
+
             }
 
             &:hover {
@@ -371,8 +433,9 @@ $dark-mode: rgba(25, 25, 28, 1);
             &:hover .overlay-text-container .offset-header>span {
                 animation-name: slideUp;
             }
-
-
         }
     }
 }
+
+
+// Responsive

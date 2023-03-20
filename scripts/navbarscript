@@ -1,3 +1,0 @@
-function moveNavIn(){
-    document.getElementById("navbar-responsive").style.transform = 'translate(-100vw)';
-}
