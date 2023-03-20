@@ -7,6 +7,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 1250px) {
+  .main-container {
+    width: calc(100vw - 30px);
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
 .main-container .main-row-container {
   flex: 0.9 0.9 0px;
@@ -30,6 +39,18 @@
   overflow: hidden;
   transition: 300ms ease-in-out;
   cursor: pointer;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content {
+    width: 80vw;
+    height: 80vw;
+    background-color: black;
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
 }
 .main-container .main-row-container .main-content .content-picture {
   min-height: 100%;
@@ -76,6 +97,11 @@
   display: block;
   opacity: 0;
 }
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content .overlay-text-container .offset-header > span {
+    opacity: 1;
+  }
+}
 .main-container .main-row-container .main-content .overlay-text-container .offset-header-odd > span {
   text-align: left;
   animation-delay: 0s;
@@ -107,6 +133,12 @@
   border-radius: 10px 10px 10px 10px;
   z-index: 1;
   transition: 400ms ease-in-out;
+}
+@media (max-width: 1250px) {
+  .main-container .main-row-container .main-content .overlay-background {
+    opacity: 1;
+    height: 100%;
+  }
 }
 .main-container .main-row-container .main-content:hover {
   transform: translateY(-5px) translateX(-5px);

@@ -20,6 +20,11 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1250px) {
+  .main-container .contact-container .flex-container .form-container {
+    width: 90vw;
+  }
+}
 .main-container .contact-container .flex-container .form-container .text-input {
   outline: none;
   background: transparent;
@@ -34,6 +39,12 @@
 }
 .main-container .contact-container .flex-container .form-container .text-input:focus {
   border-bottom: 1px solid rgb(255, 105, 180);
+}
+@media (max-width: 1250px) {
+  .main-container .contact-container .flex-container .form-container .text-input {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 .main-container .contact-container .flex-container .form-container button {
   padding: 15px 40px;
